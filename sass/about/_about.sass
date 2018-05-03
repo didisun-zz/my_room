@@ -1,0 +1,94 @@
+.about-me
+  position: relative
+  height: 100%
+  margin: 0
+  padding: 0
+  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)
+  background-repeat: no-repeat
+  background-attachment: fixed
+  overflow: hidden
+  zoom: 105%;
+  .grid
+    justify-content: center
+    align-items: center
+    align-content: center
+    padding: 2rem 2rem
+    @media(max-width: 1324px)
+      flex-direction: column-reverse
+
+  .wrapper
+    width: 100%
+    min-height: 700px
+    position: relative
+    background-position: center
+    background-repeat: no-repeat
+    background-image: url()
+    background-size: cover
+    overflow: visible
+
+
+
+  .layer-1,.layer-2 
+    position: absolute
+    height: 100%
+    width: 100%;
+    bottom: 0px
+    left: -50px
+    background-position: top left
+    background-repeat: no-repeat
+    z-index: 1
+    margin-bottom: 0px
+    pointer-events: none
+
+  .layer-1
+    background-image: url(../img/about2.png)
+    height: 100%
+    z-index: 2
+    margin-left: 0px
+
+
+  .layer-2
+    height: 100%
+    background-image: url(../img/about1.png)
+    margin-left: 0px
+
+  .layer-4
+    height: 100%
+    background-image: url(../img/about3.png)
+    margin-left: 0px
+    position: absolute
+    height: 100%
+    width: 100%;
+    bottom: 0px
+    right: 0px
+    background-position: top right
+    background-repeat: no-repeat
+    z-index: 1
+    margin-bottom: 0px
+    pointer-events: none
+
+  .layer-3
+    height: 420px
+    width: 420px
+    //background-color: rgba(255, 255, 255, 0.5)
+    background-color: white
+    position: absolute
+    position: center
+    z-index: 1
+    margin-left: 40%
+    padding: 23px
+    overflow-y: scroll
+    //border-radius: 20px
+    //box-shadow: 5px 10px 18px #888888 
+    p
+      hyphens: none
+    h2
+      text-decoration: underline
+
+  #parrotabout
+    height: 200px
+    position: absolute
+    top: -10px
+    right: 50px
+    z-index: 1
+           

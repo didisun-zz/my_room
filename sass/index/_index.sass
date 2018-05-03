@@ -1,0 +1,68 @@
+.doors
+  font-family: $font-roboto-mono
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)
+  height: 100vh
+
+  .door1
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/door-closed-1.svg)
+    max-height: 23em
+    min-height: 23em
+    &:hover
+      background-image: url(../img/door-open-1.svg)
+
+  .door2
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/door-closed-2.svg)
+    max-height: 23em
+    min-height: 23em
+    &:hover
+      background-image: url(../img/door-open-2.svg)
+
+  .adi
+    padding: 5rem 0 3rem
+    text-align: left
+    line-height: 2rem
+    flex-direction: column
+
+    @media(max-width: 760px)
+      padding: 3rem 0 0rem
+
+    h1
+      color: #000
+      font-size: 5rem
+      margin: 0
+      text-transform: uppercase
+      font-weight: $font-bold
+      letter-spacing: 2px
+      word-spacing: -2rem
+      @media(max-width: 760px)
+        font-size: 3rem
+    h2
+      color: #000
+      font-size: 2rem
+
+      @media(max-width: 760px)
+        font-size: 1.5rem
+
+  .grid
+
+    justify-content: center
+    align-content: center
+    text-align: center
+
+
+  .container
+    max-width: 1200px
+
+    h2
+      color: #000
+      text-transform: uppercase
+    img
+      margin-bottom: 4rem
+      @media(max-width: 760px)
+        margin-bottom: 0

@@ -1,0 +1,124 @@
+#design-body
+  .modal
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    background: rgba(33, 33, 33, 0.95)
+    visibility: hidden
+    opacity: 0
+    transition: .8s
+    z-index: 99999
+    &.active-lock
+      visibility: visible
+      opacity: 1
+
+  .knock-code
+    position: fixed
+    left: calc(50% - 180px)
+    top: calc(50% - 180px)
+    width: 360px
+    height: 360px
+
+  .enter-code
+    text-align: center
+    font-size: 1.5em
+    color: #FFF
+    padding-top: 2em
+    font-family: Courier, Monaco, monospace
+
+  .pass
+    position: absolute
+    left: calc(50% - 140px)
+    top: 0
+    width: 280px
+    height: 50px
+    font: 18pt Verdana
+    color: #FFF
+    text-align: center
+    letter-spacing: 2px
+    line-height: 50px
+    div
+      display: inline-block
+      animation: bull 0.2s linear
+    &.active-lock
+      color: #ff5252
+      animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+      transform: translate3d(0, 0, 0)
+      backface-visibility: hidden
+      perspective: 1000px
+
+  .btn
+    position: absolute
+    width: 220px
+    height: 30px
+    bottom: 10%
+    left: calc(50% - 110px)
+    font-family: Courier, Monaco, monospace
+
+  @keyframes bull
+    0%
+      transform: scale(2, 2)
+
+
+  @keyframes shake
+    10%, 90%
+      transform: translate3d(-1px, 0, 0)
+
+    20%, 80%
+      transform: translate3d(2px, 0, 0)
+
+    30%, 50%, 70%
+      transform: translate3d(-4px, 0, 0)
+
+    40%, 60%
+      transform: translate3d(4px, 0, 0)
+
+
+  .field
+    position: absolute
+    left: calc(50% - 152px)
+    bottom: 0
+    width: 304px
+    height: 304px
+
+  .square
+    position: absolute
+    width: 150px
+    height: 150px
+    background: rgba(66, 66, 66, 0.4)
+    transition: .2s
+    cursor: pointer
+    &:nth-child(1)
+      left: 0
+      top: 0
+      border: 2px solid #f0f0f0
+      border-width: 2px 1px 1px 2px
+    &:nth-child(2)
+      left: 50%
+      top: 0
+      border: 2px solid #f0f0f0
+      border-width: 2px 2px 1px 1px
+    &:nth-child(3)
+      left: 0
+      top: 50%
+      border: 2px solid #f0f0f0
+      border-width: 1px 1px 2px 2px
+    &:nth-child(4)
+      left: 50%
+      top: 50%
+      border: 2px solid #f0f0f0
+      border-width: 1px 2px 2px 1px
+    &:hover
+      background: rgba(66, 66, 66, 0.8)
+
+  .answer
+    position: fixed
+    left: calc(50% - 150px)
+    bottom: 10px
+    width: 300px
+    font: 18pt Verdana
+    text-align: center
+    line-height: 10pt
+    color: #4CAF50

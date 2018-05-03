@@ -1,0 +1,576 @@
+#room
+  .container
+    position: relative
+    width: 100%
+    max-width: 1384px
+
+  .grid
+    align-items: center
+    justify-content: center
+    align-content: center
+    text-align: center
+
+
+  // walls
+
+  .wall1
+    position: absolute
+    width: 25.3em
+    top: 0em
+    left: -11em
+    z-index: 1
+
+  .wall2
+    position: absolute
+    left: 70.2em
+    z-index: 1
+    top: 0em
+    width: 25.5em
+
+  // floor
+
+  .floor
+    position: absolute
+    left: -10.5em
+    top: 34em
+    min-width: 1700px
+    max-width: 1700px
+
+
+  // Window
+
+  .window
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 17em
+    max-height: 15em
+    min-height: 15em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/window.gif)
+    top: 5em
+    left: 44em
+    z-index: 3
+
+    #goldcat
+      cursor: pointer
+      position: absolute
+      height: auto
+      max-width: 5em
+      max-height: 5em
+      min-height: 5em
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      //background-image: url('../img/cat2.gif')
+      top: 9.8em
+      left: 3em
+      z-index: 5
+      opacity: 0
+    //  &:hover
+    //  background-image: url('../img/cat2.gif')
+
+    .curtain
+      cursor: pointer
+      position: absolute
+      top: -.7em
+      left: 1em
+      max-width: 9em
+      z-index: 5
+
+    .dreamcatcher
+      position: absolute
+      top: -.2em
+      left: 10em
+      max-width: 4em
+      z-index: 5
+
+  // Board
+
+  .board-img
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 14em
+    max-height: 10em
+    min-height: 10em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    top: 9em
+    left: 23em
+    z-index: 2
+    cursor: pointer
+
+  .board-img1
+    background-image: url(../img/board5.svg)
+
+  .board-img2
+    background-image: url(../img/board4.svg)
+
+  .board-img3
+    background-image: url(../img/board3.svg)
+
+  .board-img4
+    background-image: url(../img/board2.svg)
+
+  .board-img5
+    background-image: url(../img/board1.svg)
+
+  // Parrot
+
+  .parrot-img
+    cursor: pointer
+    position: absolute
+    height: 165px
+    width: 100px
+    background-repeat: no-repeat
+    background-size: 180px auto
+    top: 5em
+    left: 19em
+    background-image: url(../img/parrot1.png)
+    z-index: 3
+    &:hover
+      width: 200px
+      background-image: url('../img/parrot3.gif')
+
+  // Lamp
+
+  .lamp-off
+    cursor: pointer
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 10em
+    top: 27em
+    left: 21em
+    z-index: 2
+
+  .lamp-on
+    cursor: pointer
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 10em
+    top: 27em
+    left: 21em
+    z-index: 1
+    opacity: 0
+
+  // Conoda
+  .conoda
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 17em
+    max-height: 16em
+    min-height: 16em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/conoda.svg)
+    top: 27em
+    left: 1em
+    z-index: 2
+    .skull
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 3em
+      max-height: 3em
+      min-height: 3em
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      background-image: url('../img/skull.svg')
+      top: 5em
+      left: 7.5em
+      z-index: 2
+
+    .candles
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 5em
+      max-height: 5em
+      min-height: 5em
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      background-image: url('../img/candles.gif')
+      top: -1em
+      left: 4em
+      z-index: 3
+
+    .tv
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 10em
+      max-height: 10em
+      min-height: 10em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: -6.5em
+      left: 7em
+      z-index: 34
+
+    .chanel1
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 10em
+      max-height: 10em
+      min-height: 10em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: -6.5em
+      left: 7em
+      z-index: 34
+      background-image: url('../img/chanel1.gif')
+
+    .chanel2
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 10em
+      max-height: 10em
+      min-height: 10em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: -6.5em
+      left: 7em
+      z-index: 34
+      background-image: url('../img/chanel2.gif')
+
+    .chanel3
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 10em
+      max-height: 10em
+      min-height: 10em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: -6.5em
+      left: 7em
+      z-index: 34
+      background-image: url('../img/chanel3.gif')
+
+    .chanel4
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 10em
+      max-height: 10em
+      min-height: 10em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: -6.5em
+      left: 7em
+      z-index: 34
+      background-image: url('../img/chanel4.gif')
+
+    .chanel5
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 10em
+      max-height: 10em
+      min-height: 10em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: -6.5em
+      left: 7em
+      z-index: 34
+      background-image: url('../img/tv-black.svg')
+
+    .book
+      position: absolute
+      height: auto
+      width: 100%
+      max-width: 5em
+      max-height: 5em
+      min-height: 5em
+      background-repeat: no-repeat
+      background-size: 10em
+      background-position: center
+      top: 7.6em
+      left: 7.3em
+      z-index: 34
+
+  .wall-hang
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 12em
+    min-width: 12em
+    top: 6em
+    left: 0em
+    z-index: 1
+
+  .plant
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 12em
+    min-width: 12em
+    top: 20em
+    left: -9em
+    z-index: 2
+
+  .aloe
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 9em
+    min-width: 9em
+    top: 39em
+    left: 85em
+    z-index: 3
+
+  .hamsa
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 3em
+    min-width: 3em
+    top: 7em
+    left: 63em
+    z-index: 3
+
+  // Girl
+
+  .girl
+    position: absolute
+    top: 19em
+    left: 33em
+    height: auto
+    width: 100%
+    max-width: 10em
+    max-height: 25em
+    min-height: 25em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/girl1.png)
+    z-index: 3
+    &:hover
+      background-image: url('../img/girl2.gif')
+
+  // Sofa
+
+  .sofa
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 18em
+    min-width: 18em
+    top: 26em
+    left: 31em
+    z-index: 3
+
+  // Black cat
+
+  .blackcat
+    position: absolute
+    top: 33em
+    left: 27.2em
+    height: auto
+    width: 100%
+    max-width: 5em
+    max-height: 8em
+    min-height: 8em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/blackcat1.png)
+    z-index: 2
+    &:hover
+      background-image: url('../img/blackcat2.gif')
+
+  // Table
+
+  .table
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 23em
+    max-height: 17em
+    min-height: 17em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/table.png)
+    top: 27em
+    left: 40em
+    z-index: 3
+
+  // Phone
+
+  .phone-img
+    position: absolute
+    top: 27em
+    left: 54em
+    height: auto
+    width: 100%
+    max-width: 5em
+    max-height: 5em
+    min-height: 5em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/phone.png)
+    z-index: 3
+    &:hover
+      background-image: url('../img/phone.gif')
+
+  // Laptop
+  .laptop-img
+    position: absolute
+    top: 25em
+    left: 43em
+    height: auto
+    width: 100%
+    max-width: 8em
+    max-height: 6em
+    min-height: 6em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/computer1.png)
+    z-index: 3
+    &:hover
+      background-image: url('../img/computer2.gif')
+
+  // Remote
+
+  .remote
+    position: absolute
+    top: 32em
+    left: 48em
+    width: 100%
+    height: auto
+    max-width: 4.3em
+    z-index: 3
+    cursor: pointer
+
+  // Carpet
+
+  .carpet
+    position: absolute
+    top: 36em
+    left: 17em
+    width: 100%
+    height: auto
+    max-width: 50rem
+    z-index: 0
+
+  // Hanger
+  .hanger
+    position: absolute
+    height: auto
+    width: 100%
+    max-width: 20em
+    max-height: 24em
+    min-height: 24em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/hanger.svg)
+    top: 17em
+    left: 65em
+    z-index: 3
+
+    .coat1, .coat2, .coat3, .coat4,
+    .shoes1, .shoes2, .shoes3, .shoes4
+      position: absolute
+      width: 100%
+      height: auto
+      cursor: move
+
+
+
+    .coat1
+      top: 1em
+      left: 8em
+      max-width: 10rem
+      min-width: 10rem
+      z-index: 4
+
+    .coat2
+      top: .1em
+      left: 4em
+      max-width: 7rem
+      min-width: 7rem
+
+    .coat3
+      top: .3em
+      left: 5em
+      max-width: 8rem
+      min-width: 8rem
+
+    .coat4
+      top: .5em
+      left: 6em
+      max-width: 9rem
+      min-width: 9rem
+
+    .shoes1
+      top: 18em
+      left: 10em
+      max-width: 4.5rem
+      min-width: 4.5rem
+
+    .shoes2
+      top: 17em
+      left: 6.5em
+      max-width: 4.5rem
+      min-width: 4.5rem
+
+    .shoes3
+      top: 15em
+      left: 4em
+      max-width: 4.5rem
+      min-width: 4.5rem
+
+  .room-door
+    cursor: pointer
+    height: auto
+    width: 100%
+    position: absolute
+    max-width: 10em
+    max-height: 30em
+    min-height: 30em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    background-image: url(../img/door1.svg)
+    top: 17.3em
+    left: 83em
+    z-index: 2
+    &:hover
+      background-image: url('../img/door2.svg')
+
+@media only screen and (max-width: 500px)
+  .mobilehidden
+      display: none
+  
+.subtitle
+  font-size: 20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: yellow;
+  position: fixed;
+  bottom: 15%;
+  margin-top: 700px;
+  z-index: 1000;
+
+

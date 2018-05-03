@@ -1,0 +1,128 @@
+
+// base
+
+*, *::before, *::after
+  box-sizing: border-box
+*
+  font-weight: 300
+  font-size: 1rem
+  font-variant-ligatures: none
+  -webkit-font-smoothing: antialiased
+  font-family: $font-roboto-mono
+
+
+body
+  padding: 0
+  margin: 0
+  position: relative
+  overflow-y: auto
+
+html,
+body
+  width: 100%
+  height: 100%
+  min-width: 1000px
+  min-height: 1000px
+  zoom: 90%;
+
+img
+  max-width: 100%
+  height: auto
+
+.container
+  width: 90%
+  max-width: 1600px
+  margin: 0 auto
+  position: relative
+
+.mfp-no-margins
+  img.mfp-img
+    padding: 0
+  .mfp-figure:after
+    top: 0
+    bottom: 0
+  .mfp-container
+    padding: 0
+
+.mfp-with-zoom
+  .mfp-container, &.mfp-bg
+    opacity: 0
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+    &.mfp-bg
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-container, &.mfp-bg
+      opacity: 0
+
+.mobile-hidden
+  @media(max-width: 760px)
+    display: none
+.mobile-show
+  @media(min-width: 760px)
+    display: none
+  p
+    color: #7a7a7a
+
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+
+.fadeIn
+  animation-name: fadeIn
+  animation-duration: 3s
+  animation-fill-mode: both
+
+
+@keyframes fadeInLeft
+  from
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+
+  to
+    opacity: 1
+    transform: none
+
+
+.fadeInLeft
+  animation-name: fadeInLeft
+  animation-duration: 3s
+  animation-fill-mode: both
+
+
+@keyframes fadeInRight
+  from
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+
+  to
+    opacity: 1
+    transform: none
+
+
+.fadeInRight
+  animation-name: fadeInRight
+  animation-duration: 3s
+  animation-fill-mode: both
+
+.go-back
+  text-decoration: none !important
+  color: #7a7a7a !important
+  font-size: 5em
+  padding: 3rem
+::selection
+  background: #ffd1ff
+
+::-moz-selection
+  background: #ffb7b7

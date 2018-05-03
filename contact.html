@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/ico" href="img/favicon.ico" />
+  <title>Contact</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="contact fadeIn">
+  <br>
+  <a class="go-back" href="room.html">&cudarrl;</a>
+  <div id="stage">
+
+    <div id="iphone-6"><span class="power"></span><span class="volume-switch"></span><span class="volume-plus"></span><span class="volume-minus"></span><span class="line-top"></span><span class="line-bottom"></span><span class="camera"></span><span class="speaker"></span>
+
+      <span
+        class="home"><a href="#"></a></span>
+        <div class="screen">
+          <div class="topbar">
+            <div class="signal"><span class="full"></span><span class="full"></span><span class="full"></span><span></span><span></span>T-Mobile</div>
+            <div class="time">00:00</div>
+            <div class="battery"></div>
+          </div>
+          <div class="loading"></div>
+          <div class="lock">
+            <div class="blur"></div>
+            <div class="text">Touch ID or Enter Passcode</div>
+            <div class="pills"><span></span><span></span><span></span><span></span></div>
+            <div class="keyboard">
+              <div class="number"><em>1</em></div>
+              <div class="number"><em>2</em><span>DEF</span></div>
+              <div class="number last"><em>3</em><span>DEF</span></div>
+              <div class="number"><em>4</em><span>GHI</span></div>
+              <div class="number"><em>5</em><span>JKL</span></div>
+              <div class="number last"><em>6</em><span>MNO</span></div>
+              <div class="number"><em>7</em><span>PQRS</span></div>
+              <div class="number"><em>8</em><span>TUV</span></div>
+              <div class="number last"><em>9</em><span>WXYZ</span></div>
+              <div class="number center"><em>0</em></div>
+            </div>
+          </div>
+          <div class="wallpaper"></div>
+          <div class="dashboard">
+            <ul>
+                <li><img class="email-icon" title="Contact" src="img/email-icon.png"></li>
+                <li><img class="paint-icon" title="Paint" src="img/paint-icon.svg"></li>
+                <li><img class="center snake-game" title="Snake" src="img/play-icon.png"></li>
+            </ul>
+          </div>
+          <div class="email">
+            <div class="contact-info">
+              <h2>Adi Aviram</h2>
+              <p>Berlin,</p>
+              <p>didiaviram@gmail.com</p>
+              <p>017628553111</p>
+            </div>
+          </div>
+
+          <div class="paint">
+            <canvas id="canvas">Your browser does not support canvas element.</canvas>
+            <div id="control">
+                <div class="container">
+                    <div class="control-box">
+                        <div id="tools">
+                        </div>
+                    </div><!--
+                 --><div class="control-box brush">
+                        <div class="brush">
+                            <div class="control-inner">
+                                <div class="control-header" style="margin-top:10px!important">Size</div>
+                                <input id="brush" type="text" value="5"/>
+                                <div class="control-header" style="margin-top:10px!important">Color</div>
+                                <input id="color" type="text" value="#fb7fe0"/>
+                                <div class="control-header" style="margin-top:10px!important">Alpha</div>
+                                <input id="alpha" type="text" value="1.0"/>
+                            </div>
+                        </div>
+                    </div><!--
+                 --><div class=" hidden control-box palette">
+                        <div class="control-header">Palette</div>
+                        <div id="paints" class="control-inner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="snake">
+            <header class="wrap">
+              <h1>Snake</h1>
+              <p class="score">Score: <span id="score_value">0</span></p>
+            </header>
+            <canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
+
+            <!-- Game Over Screen -->
+            <div id="gameover">
+              <h2>Game Over</h2>
+              <p>press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin a</p>
+              <a id="newgame_gameover">new game</a>
+              <a id="setting_gameover">settings</a>
+            </div>
+
+            <!-- Setting screen -->
+            <div id="setting">
+              <h2>Settings</h2>
+
+              <a id="newgame_setting">new game</a>
+
+              <p>Speed:
+                <input id="speed1" type="radio" name="speed" value="120" checked/>
+                <label for="speed1">Slow</label>
+                <input id="speed2" type="radio" name="speed" value="75" />
+                <label for="speed2">Normal</label>
+                <input id="speed3" type="radio" name="speed" value="35" />
+                <label for="speed3">Fast</label>
+              </p>
+
+              <p>Wall:
+                <input id="wallon" type="radio" name="wall" value="1" checked/>
+                <label for="wallon">On</label>
+                <input id="walloff" type="radio" name="wall" value="0" />
+                <label for="walloff">Off</label>
+              </p>
+
+            </div>
+
+            <!-- Main Menu Screen -->
+            <div id="menu">
+              <h2>Snake</h2>
+
+              <a id="newgame_menu">new game</a>
+              <a id="setting_menu">settings</a>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://use.fontawesome.com/fccd26d21f.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+
+</html>
